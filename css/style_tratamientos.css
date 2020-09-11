@@ -1,0 +1,271 @@
+
+
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 255, 255);
+    overflow-x: hidden;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+::-webkit-scrollbar {display: none;}
+
+/** Navegation Menu **/
+#header{
+   position: relative;
+   width: 100%;
+}
+.menu{
+   position: fixed;
+   top:0;
+   left: 0;
+   width: 100%;
+   padding: 20px 0;
+   
+   background:transparent;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 9999;
+}
+
+/* LOGO MENU */
+
+.boton-asistente-menu{
+   margin-left: 20px;
+}
+
+/* LISTA MENU */
+
+.lista-menu {
+   margin-right: 30px;
+}
+.lista-menu  ul{
+   display: flex;
+}
+.lista-menu  ul li{
+   list-style: none;
+}
+.lista-menu  ul li a{
+   text-decoration: none;
+   margin: 0px 10px;
+   padding:8px;
+   color:white;
+   border-radius: 10px;
+   transition: 0.3s;
+   font-size: 16px;
+   font-family: 'open sans';
+   font-weight: 300;
+}
+
+.lista-menu ul li a:hover{
+   background: #04eeff3d;
+   color:rgb(255, 255, 255);
+}
+.lista-menu  ul li a.active{
+   border-radius: 0;
+   border-bottom: 2px solid white;
+   background: transparent;
+   cursor: default ;
+}
+
+
+/** IMAGEN HEADER **/
+
+.img-header{
+   position: relative;
+   width: 100%;
+   height: 90vh;
+   background: linear-gradient(to right, hsla(155, 98%, 35%, 0.699), hsla(221, 74%, 59%, 0.63)), url(../img/fondos/tratamientos.png);
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+}
+
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    font-size: 50px;
+    color:#fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.contenido-edit{
+padding-top:100px;
+}
+
+.acerca-de{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.info-container{
+    width: 80%;
+    margin:  100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.info-container h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    
+}
+.info-container p{
+    text-align: justify;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 28px;
+    margin-left: 50px;
+}
+.info-container .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+    text-align: justify;
+}
+.info-container .about-gallery img{
+    width: calc(23% - 0px);
+    height: 300px;
+    margin: 0px 1px;
+    object-fit: cover;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.info-container .about-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} 
+
+
+.acerca-de .info-container2{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: justify;
+    
+}
+.acerca-de .info-container2 h1{
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 110px 0px;
+    
+}
+.acerca-de .info-container2 p{
+    text-align:justify;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 28px;
+    margin:5px px;
+    
+}
+ .acerca-de .info-container2 .about-gallery2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0px;
+}
+.acerca-de .info-container2 .about-gallery2 img{
+    width: calc( - 0px);
+    height: 300px;
+    margin: left;
+    display: block;
+    object-fit: cover;
+    border-radius: 0px;
+    cursor: pointer;
+    
+}
+.acerca-de .info-container2 .about-more2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}*/
+
+.acerca-de .info-container .about-more button:hover{background: var(--blue);}
+
+.footer{
+   position: relative;
+}
+
+.footer .footer-derechos{
+   position:absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background:rgba(255, 255, 255, 0.726);
+   align-items: center;
+   padding: 20px;
+}
+.footer .footer-derechos p{
+   font-size: 15px;
+   text-align: center;
+}
+
+.icons {
+   display: block;
+   text-align: center;
+}
+.icons i {
+   color: var(--color-principal);
+   font-size: 25px;
+   margin: 10px;
+   transition: all 0.2s linear;
+}
+
+.icons i:hover{
+   color: var(--color-secundario);
+}
+ 
+.color {
+   background: black;
+
+}
+.color1 {
+   background: transparent;
+}
+
+
+.barra-colores-footer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+}

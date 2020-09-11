@@ -1,0 +1,280 @@
+
+ *{
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ body{
+     background: rgb(255, 255, 255);
+     overflow-x: hidden;
+     font-family: 'Red Hat Text', sans-serif;
+ }
+
+ ::-webkit-scrollbar {display: none;}
+
+ /** Navegation Menu **/
+ #header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    
+    background:transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* LOGO MENU */
+
+.boton-asistente-menu{
+    margin-left: 20px;
+}
+
+/* LISTA MENU */
+
+.lista-menu {
+    margin-right: 30px;
+}
+.lista-menu  ul{
+    display: flex;
+}
+.lista-menu  ul li{
+    list-style: none;
+}
+.lista-menu  ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding:8px;
+    color:white;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: 'open sans';
+    font-weight: 300;
+}
+
+.lista-menu ul li a:hover{
+    background: #04eeff3d;
+    color:rgb(255, 255, 255);
+}
+.lista-menu  ul li a.active{
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+    cursor: default ;
+}
+
+
+/** IMAGEN HEADER **/
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* background:url(../img/sintomas/header/Portada.png); */
+    background: linear-gradient(to right, hsla(313, 98%, 35%, 0.699), hsla(221, 100%, 37%, 0.63)), url(../img/sintomas/header/Portada.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    font-size: 50px;
+    color:#fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+.padre-recuadros{
+    position: relative;
+    background: rgb(133, 14, 163);
+    background: linear-gradient(to bottom, rgba(181,0,139,1) 0%, rgba(157,13,224,1) 91%, rgba(157,13,224,1) 100%);
+}
+
+
+
+.contenido-sintomas-leves{
+   
+    text-align: center;
+    padding-top: 150px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contenido-sintomas-graves{
+  
+    text-align: center;
+    padding: 50px 0 150px 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.recuadros-sintomas{
+    padding:0 10%;
+    font-family: 'Concert One', cursive;
+}
+
+.texto-sintomas{
+    text-align: left;
+    margin: 0 0 50px 120px;
+}
+
+.recuadros-sintomas h1{
+    
+font-size: 30px;
+color: rgb(236, 236, 236);
+}
+.recuadros-sintomas h2{
+    
+font-size: 70px;
+color:#13dbe9;
+
+
+}
+.recuadros-sintomas h3{
+font-size: 70px;
+font-weight: 600;
+color:var(--color-principal);
+
+}
+
+.recuadros-sintomas h3 span{
+color: rgb(236, 236, 236);
+margin-right:10px;
+}
+
+.titulo-recuadros-sintomas h1{
+    padding: 20px;
+    font-size: 40px;
+    }
+
+.acerca-de .info-container{
+    width: 80%;
+    margin:  100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.acerca-de .info-container h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    
+}
+.acerca-de .info-container p{
+    text-align: justify;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 28px;
+    margin-left: 50px;
+}
+
+.acerca-de .info-container1{
+    margin:15px 30px;
+    display: inline-block;
+    text-align: center;
+}
+.acerca-de .info-container1 p{
+    text-align: center;
+    font-size: 24px;
+    color: var(--black);
+    font-weight: 100;
+    width: 200px;
+    margin: auto;
+    color: white;
+}
+
+.acerca-de .info-container1 img{
+    width: 250px;
+    margin: auto;
+}
+
+.footer{
+    position: relative;
+ }
+ 
+ .footer .footer-derechos{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:rgba(255, 255, 255, 0.726);
+    align-items: center;
+    padding: 20px;
+ }
+ .footer .footer-derechos p{
+    font-size: 15px;
+    text-align: center;
+ }
+ 
+ .icons {
+    display: block;
+    text-align: center;
+ }
+ .icons i {
+    color: var(--color-principal);
+    font-size: 25px;
+    margin: 10px;
+    transition: all 0.2s linear;
+ }
+ 
+ .icons i:hover{
+    color: var(--color-secundario);
+ }
+  
+ .color {
+    background: black;
+ 
+ }
+ .color1 {
+    background: transparent;
+ }
+ 
+ 
+ .barra-colores-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+ }

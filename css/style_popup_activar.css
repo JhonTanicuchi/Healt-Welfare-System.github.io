@@ -1,0 +1,94 @@
+.scroll{
+    overflow: hidden;
+}
+
+
+.fondo-popup-Activar-Asistente {
+	background: rgba(0, 0, 0, 0.623);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    visibility: hidden;
+    z-index: 10000;
+    
+	
+}
+
+.fondo-popup-Activar-Asistente.active {
+	visibility: visible;
+}
+
+.popup-Activar-Asistente {
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 500px;
+	transition: .7s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+	height: 300px;
+	top: 0;
+	background: rgba(174,30,158,1);
+    background: linear-gradient(to bottom, rgb(32, 147, 224) 0%, rgb(5, 52, 122) 100%);
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.popup-Activar-Asistente .texto{
+    padding: 10px;
+}
+
+.popup-Activar-Asistente h1 {
+	font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+
+.popup-Activar-Asistente h2 {
+	font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin: 15px 0 5px 0;
+}
+
+.popup-Activar-Asistente h3 {
+	font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+.popup-Activar-Asistente.active {transform: scale(1); opacity: 1; }
+
+
+.boton-activar{
+    margin-top: 20px;
+}
+
+
+.cerrar-popup-activar {
+    top: 0;
+	right: 0;
+	padding: 20px;
+	position: absolute;
+	z-index: 1000;
+	transition: .3s ease all;
+}
+
+.cerrar-popup-activar i{
+	font-size: 18px;
+	color: rgb(104, 104, 104);
+
+}
+
+.cerrar-popup-activar i:hover {
+	color: rgb(184, 184, 184);
+}

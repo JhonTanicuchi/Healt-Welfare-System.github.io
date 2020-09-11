@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Healt & Welfare System | Sintomas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logos/logo_celeste.png" type="image/x-icon" />
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="../css/style_tratamientos.css">
+    <link rel="stylesheet" href="../css/style_menu.css">
+    <link rel="stylesheet" href="../css/style_wave.css">
+    <link rel="stylesheet" href="../css/style_whatsapp.css">
+    <link rel="stylesheet" href="../css/style_asistente.css">
+    <link rel="stylesheet" href="../css/style_boton.css">
+    <link rel="stylesheet" href="../css/style_popup_activar.css">
+    <link rel="stylesheet" href="../css/skew-pantallas.css">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/hint.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/35db202371.js"></script>
+</head>
+
+<body>
+
+<!-- VENTANA MODAL ACTIVAR ASISTENTE -->
+  
+<div class="fondo-popup-Activar-Asistente" id="fondo-popup-Activar-Asistente">
+    <div class="popup-Activar-Asistente" id="popup-Activar-Asistente">
+    <div class="texto">
+        
+          <h1>¿Deseas activar a "VIví"?</h1>
+<h2>Tu asistente virtual</h2>
+<h3>Ella te narrara un breve resumen del contenido</h3>
+          <div class="boton-activar" id="boton-activar">
+            <button class="bubbly-button button-modal" onclick="modalActivarAsistente()" >Activar Viví</button></div>
+
+        </div>
+                <div class="cerrar-popup-activar">
+                  <a href="#"  onclick="cerrarModalActivar()"><i class="fas fa-times"></i></a>
+                </div>
+    </div>
+        
+    </div>
+  </div>
+
+
+
+ <!-- BOTON WHATSAPP -->
+
+ <a  data-aos="fade-left"
+ data-aos-anchor="#example-anchor"
+ data-aos-offset="0"
+ data-aos-delay="1000"
+ data-aos-duration="500" href="" class="float" target="_blank">
+   <i class="fab fa-whatsapp my-float"></i>
+ </a>
+
+ <!-- ASISTENTE -->
+
+ <div id="contenedor-Audios">
+   <audio  id="audio" class="ocultar" src="../sound/tratamientos/tratamientos.wav" controls="controls"> </audio>
+ </div>
+   
+
+ <!-- EFECTO ASISTENTE -->
+   <div class="loader-inner ball-scale-multiple" id="ondasSonido">
+     <div></div>
+     <div></div>
+     <div></div>
+   </div>
+ 
+
+    <!-- Menu de Navegacion -->
+    <header id="header">
+        <nav class="menu">
+            <div class="boton-asistente-menu">
+
+
+                <!-- BOTON ASISTENTE -->
+                <button data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="0" data-aos-delay="200"
+                    data-aos-duration="500" onclick="play()" class="hint--right hint--bounce"
+                    aria-label="Asistente Vivi" id="botonSonido"><i id="icon" class="fas fa-volume-mute"></i></button>
+
+                <div class="icono-menu" id="icono-menu" onclick="transform()">
+                    <span class="figura-menu-1"></span>
+                    <span class="figura-menu-2"></span>
+                    <span class="figura-menu-3"></span>
+                </div>
+
+            </div>
+
+            <div class="lista-menu">
+                <ul class="lists">
+                    <li><a class="lista " href="index.html">Inicio</a></li>
+                    <li><a class="lista" href="test.html">Test COVID-19</a></li>
+                    <li><a class="lista" href="prevencion.html">Prevención</a></li>
+                    <li><a class="lista" href="sintomas.html">Síntomas</a></li>
+                    <li><a class="lista active" href="tratamientos.html">Tratamientos</a></li>
+                    <li><a class="lista" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="img-header">
+            <div class="welcome">
+              <h1>
+               <strong>
+                 Existen tratamientos para el Covid-19?</strong></h1>
+              <hr>
+              <p>#YoMeQuedoEnCasa</p>
+            </div>       
+        </div>
+
+        <a href="#contenido-total">
+            <div class="elemento flecha-Abajo ">
+                <div class="menuPpal suavizado"><i class="fa fa-angle-down fa-2x flecha animatedColor"></i> </div>
+            </div>
+        </a>
+
+
+        <div class="skew-pantallas-abajo"></div>
+
+    </header>
+
+
+
+    <main>
+        
+            <div class="info-container">
+          <h1>Tratamientos</h1>
+          <br>
+          
+          <p>El avance de la pandemia provocada por el Covid-19 ha impulsado a buscar remedios caseros o tratamientos alternativos, pero es muy IMPORTANTE aclarar que
+            Hasta la fecha,NO hay vacunas o medicamentos específicos contra la COVID-19. Se están investigando tratamientos, 
+            que serán probados en ensayos clínicos. Organización Mundial de la Salud, pero en Healt and Welfare System te mostramos algunas alternativas para mejorar tu sistema inmunologico </p>
+      
+    </div>
+            
+
+        <section class="acerca-de">
+
+            <div class="info-container contenido-edit">
+            <div class="skew-pantallas-arriba"></div>
+
+              <div class="about-gallery">
+              
+          <br>
+                <p>El consumo de frutas, vegetales y otros alimentos ayudan a mejorar el Sistema inmunológico
+                  Una dieta equilibrada es suficiente para satisfacer las necesidades de vitaminas y micronutrientes 
+                  que el cuerpo requiere para que todo el Sistema inmunológico funcione..</p>
+                  <img src="../img/tratamientos/piña.png" >
+                  
+                </div>
+                
+                </div>
+                
+                    <div class="info-container2">
+                      <div class="about-gallery2">
+                      <img src="../img/tratamientos/aguacate.png" >
+                        <p>El Jengibre, las pasas, el aloe vera, la canela, la miel de abeja, la manzanilla, la naranja o el 
+                          eucalipto son productos naturales muy efectivos a la hora de actuar ante afecciones respiratorias
+                          Infusiones con miel, limón y jengibre:
+                          Se pone a licuar el limón sin pepas con todo y cascara junto con un trocito de jengibre pelado, 
+                          todo ese licuado se procede a llevar a hervir por unos minutos dejando que saque sus propiedades,
+                          posterior procedemos a cernir y endulzar ligeramente con miel de abeja, tomar caliente.
+                          Repetir el proceso por varios días ya que es comprobado que dicha infusión nos ayuda a aumentar nuestro Sistema inmunológico.</p>
+                          
+                        </div>
+                        
+                        </div>
+                        <div class="info-container">
+                          <div class="about-gallery">
+                         
+                            <!-- <img src="img/jugo.png " > -->
+                          
+                            <p>Hay muchas opciones en el mercado para realizar remedios caseros que en 
+                              cierta manera nos van a ayudar mas que a combatir el virus nos ayudara a 
+                              subir nuestro sistema inmunológico.
+                              <br>
+                              Té de sábila con limón
+                              <br>
+                              Canela con limón.
+                              <br>
+                              Leche con ajo y canela.
+                              <br>
+                              En las mañanas jugo de tomate de riñón. 
+                              <br>
+                              Vaporizaciones para descongestionar pulmones con eucalipto y mentol.
+                              <br>
+                              La vitamina C muy importante a la hora de subir las defensas.
+                              <br>
+                              Diente de león hervido con manzanilla.
+                              <br>
+                              1 diente de ajo, miel y cebolla (ayuda para el dolor de cabeza, garganta y fiebre) 
+                              Vaporizaciones de Eucalipto y hojas de pino. ( aspirar el vapor por 5 min.)
+                            </p>
+                              <img src="../img/tratamientos/jugo.png" >
+                            </div>
+                            </div>
+      </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-derechos">
+            <div class="icons">
+                <a class="iconFooter"
+                    href="https://www.facebook.com/Health-Welfare-System-103108564806959/?modal=admin_todo_tour"><i
+                        id="fb" class="fab fa-facebook-square"></i></a>
+                </a>
+                <a class="iconFooter" href="https://www.instagram.com/health_welfare_system/?hl=es-la"><i id="i"
+                        class="fab fa-instagram"></i></a>
+                <a class="iconFooter" href="https://twitter.com/SystemWelfare"><i id="tw"
+                        class="fab fa-twitter"></i></a>
+                <a class="iconFooter" href="https://chat.whatsapp.com/CtTSsec1UrO2SY8L2VsaZs"><i id="w"
+                        class="fab fa-whatsapp"></i></a>
+                <a class="iconFooter" href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                &copy; Healt & Welfare System - 2020 | Todos los derechos
+                reservados.
+            </p>
+
+            <img class="barra-colores-footer" src="../img/test/colores.png" alt="">
+        </div>
+    </footer>
+
+
+
+
+</body>
+<!-- Scripts -->
+<script src="../js/test/arrays.js"></script>
+
+<script src="../js/html/popup_activar.js"></script>
+
+<script src="../js/html/menu.js"></script>
+<script src="../js/html/effects.js"></script>
+<script src="../js/html/boton.js"></script>
+<script src="../js/sound.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+
+<script>
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top -175
+  }, 2000);
+});
+
+$("body").on('cut copy paste', function (e) {
+  event.preventDefault();
+});
+
+$("body").on('contextmenu', function (e) {
+  return false;
+});
+</script>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Healt & Welfare System | Sintomas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logos/logo_celeste.png" type="image/x-icon" />
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="../css/styles_sintomas.css">
+    <link rel="stylesheet" href="../css/style_menu.css">
+    <link rel="stylesheet" href="../css/style_wave.css">
+    <link rel="stylesheet" href="../css/style_whatsapp.css">
+    <link rel="stylesheet" href="../css/style_asistente.css">
+    <link rel="stylesheet" href="../css/style_boton.css">
+    <link rel="stylesheet" href="../css/style_popup_activar.css">
+    <link rel="stylesheet" href="../css/skew-pantallas.css">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/hint.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/35db202371.js"></script>
+</head>
+
+<body>
+
+<!-- VENTANA MODAL ACTIVAR ASISTENTE -->
+  
+<div class="fondo-popup-Activar-Asistente" id="fondo-popup-Activar-Asistente">
+    <div class="popup-Activar-Asistente" id="popup-Activar-Asistente">
+    <div class="texto">
+        
+          <h1>¿Deseas activar a "VIví"?</h1>
+<h2>Tu asistente virtual</h2>
+<h3>Ella te narrara un breve resumen del contenido</h3>
+          <div class="boton-activar" id="boton-activar">
+            <button class="bubbly-button button-modal" onclick="modalActivarAsistente()" >Activar Viví</button></div>
+
+        </div>
+                <div class="cerrar-popup-activar">
+                  <a href="#"  onclick="cerrarModalActivar()"><i class="fas fa-times"></i></a>
+                </div>
+    </div>
+        
+    </div>
+  </div>
+
+
+
+ <!-- BOTON WHATSAPP -->
+
+ <a  data-aos="fade-left"
+ data-aos-anchor="#example-anchor"
+ data-aos-offset="0"
+ data-aos-delay="1000"
+ data-aos-duration="500" href="" class="float" target="_blank">
+   <i class="fab fa-whatsapp my-float"></i>
+ </a>
+
+ <!-- ASISTENTE -->
+
+ <div id="contenedor-Audios">
+   <audio  id="audio" class="ocultar" src="../sound/sintomas/sintomas.wav" controls="controls"> </audio>
+ </div>
+   
+
+ <!-- EFECTO ASISTENTE -->
+   <div class="loader-inner ball-scale-multiple" id="ondasSonido">
+     <div></div>
+     <div></div>
+     <div></div>
+   </div>
+ 
+
+    <!-- Menu de Navegacion -->
+    <header id="header">
+        <nav class="menu">
+            <div class="boton-asistente-menu">
+
+
+                <!-- BOTON ASISTENTE -->
+                <button data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="0" data-aos-delay="200"
+                    data-aos-duration="500" onclick="play()" class="hint--right hint--bounce"
+                    aria-label="Asistente Vivi" id="botonSonido"><i id="icon" class="fas fa-volume-mute"></i></button>
+
+                <div class="icono-menu" id="icono-menu" onclick="transform()">
+                    <span class="figura-menu-1"></span>
+                    <span class="figura-menu-2"></span>
+                    <span class="figura-menu-3"></span>
+                </div>
+
+            </div>
+
+            <div class="lista-menu">
+                <ul class="lists">
+                    <li><a class="lista " href="index.html">Inicio</a></li>
+                    <li><a class="lista" href="test.html">Test COVID-19</a></li>
+                    <li><a class="lista" href="prevencion.html">Prevención</a></li>
+                    <li><a class="lista active" href="sintomas.html">Síntomas</a></li>
+                    <li><a class="lista" href="tratamientos.html">Tratamientos</a></li>
+                    <li><a class="lista" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="img-header">
+            <div class="welcome">
+                <h1>
+                    <strong>
+                        Consejos de Prevención</strong></h1>
+                <hr>
+                <p>#YoMeQuedoEnCasa</p>
+
+            </div>
+
+        </div>
+
+
+        <a href="#contenido-total">
+            <div class="elemento flecha-Abajo ">
+                <div class="menuPpal suavizado"><i class="fa fa-angle-down fa-2x flecha animatedColor"></i> </div>
+            </div>
+        </a>
+
+
+        <div class="skew-pantallas-abajo"></div>
+
+    </header>
+
+
+
+    <main>
+        <div class="acerca-de" id="contenido-total">
+           
+            <section class="info-container">
+                <h1>#YoMeQuedoEnCasa</h1>
+
+                <p>Los signos y síntomas de la enfermedad por coronavirus
+                    2019 (COVID-19) pueden aparecer entre dos y 14 días después
+                    de la exposición al virus.
+                    Esta lista no incluye todos los posibles signos y síntomas. Se han
+                    reportado otros síntomas menos comunes, como erupción en la piel, náuseas,
+                    vómitos, y diarrea. Los niños presentan síntomas similares a los de los adultos,
+                    y generalmente tienen una enfermedad leve
+                    La gravedad de los síntomas de la COVID-19 puede ser de muy leve a extrema.
+                    Algunas personas pueden tener solo unos pocos síntomas, y otras quizás no tengan
+                    ninguno. En algunas personas quizás los síntomas empeoran, como más problemas
+                    para respirar y neumonía, aproximadamente una semana después de comenzar.</p>
+
+            </section>
+
+
+            <section class="padre-recuadros">
+                
+
+                <div class="skew-pantallas-arriba"></div>
+
+                <div class="contenido-sintomas-leves">
+                   
+                    <div class="recuadros-sintomas">
+                        <div class="texto-sintomas">
+                            <h1>Reconoce los</h1>
+                            <h2>sintomas</h2>
+                            <h3><span>del</span>COVID-19</h3>
+                        </div>
+
+                        <div class="titulo-recuadros-sintomas">
+                            <h1>Sintomas comunes</h1>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta0.png">
+                            <p>Fiebre de mas de 37.7° C</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta2.png">
+                            <p>Fuerte dolor corporal</p>
+                        </div>
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta4.png">
+                            <p>Fatiga de todo el cuerpo</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta1.png">
+                            <p>Cansancio del cuerpo</p>
+                        </div>
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta6.png">
+                            <p>Presentas vomitos frecuentes</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta11.png">
+                            <p>Mucosidad en la nariz</p>
+                        </div>
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta10.png">
+                            <p>Manifiestas dolor de garganta</p>
+                        </div>
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta3.png">
+                            <p>Fuerte dolor de Cabeza</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta14.png">
+                            <p>Manifiestas ojos rojos</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta16.png">
+                            <p>Presentas diarrea frecuente</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta5.png">
+                            <p>Presentas fuertes mareos </p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta9.png">
+                            <p>Tos seca y persistente</p>
+                        </div>
+                        
+
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="contenido-sintomas-graves">
+
+                   <div class="recuadros-sintomas">
+
+                    <div class="titulo-recuadros-sintomas">
+                        <h1>Sintomas graves</h1>
+                    </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta7.png">
+                            <p>Sensacion de falta de aire</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta8.png">
+                            <p>Dolor o presion en el pecho</p>
+                        </div>
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta13.png">
+                            <p>Erupciones en la piel</p>
+                        </div>
+
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta17.png">
+                            <p>Perdida del sentido del olfato o del gusto</p>
+                        </div>
+                        <div class="info-container1">
+
+                            <img src="../img/sintomas/iconos_sintomas/pregunta12.png">
+                            <p>Presentas escalofrios frecuentes</p>
+                        </div>
+
+                   </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-derechos">
+            <div class="icons">
+                <a 
+                    href="https://www.facebook.com/Health-Welfare-System-103108564806959/?modal=admin_todo_tour"><i
+                        id="fb" class="fab fa-facebook-square"></i></a>
+                </a>
+                <a  href="https://www.instagram.com/health_welfare_system/?hl=es-la"><i id="i"
+                        class="fab fa-instagram"></i></a>
+                <a  href="https://twitter.com/SystemWelfare"><i id="tw"
+                        class="fab fa-twitter"></i></a>
+                <a  href="https://chat.whatsapp.com/CtTSsec1UrO2SY8L2VsaZs"><i id="w"
+                        class="fab fa-whatsapp"></i></a>
+                <a  href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>
+                &copy; Healt & Welfare System - 2020 | Todos los derechos
+                reservados.
+            </p>
+
+            <img class="barra-colores-footer" src="../img/test/colores.png" alt="">
+        </div>
+    </footer>
+
+
+
+
+</body>
+<!-- Scripts -->
+<script src="../js/test/arrays.js"></script>
+
+<script src="../js/html/popup_activar.js"></script>
+
+<script src="../js/html/menu.js"></script>
+<script src="../js/html/effects.js"></script>
+<script src="../js/html/boton.js"></script>
+<script src="../js/sound.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+
+<script>
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top -180
+  }, 2000);
+});
+
+$("body").on('cut copy paste', function (e) {
+  event.preventDefault();
+});
+
+$("body").on('contextmenu', function (e) {
+  return false;
+});
+</script>
+
+</html>

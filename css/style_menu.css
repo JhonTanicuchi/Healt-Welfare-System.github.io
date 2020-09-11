@@ -1,0 +1,64 @@
+
+
+/* ICONO MENU */
+
+:root{
+    --color:black;
+}
+
+.icono-menu{
+  display: none;
+}
+
+.icono-menu {
+  width: 26px;
+  height: 22px;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.icono-menu span {
+  position: absolute;
+  width: 26px;
+  height: 3.5px;
+  background: var(--color);
+  transition: all 0.5s;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icono-menu:hover{
+  --color:#00adb9;
+}
+
+.figura-menu-1 {
+  top: 0px;
+}
+.figura-menu-2 {
+  top: 9px;
+}
+.figura-menu-3 {
+  top: 18px;
+}
+
+.icono-menu.activo .figura-menu-1 {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.icono-menu.activo .figura-menu-2 {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+.icono-menu.activo .figura-menu-3 {
+  top: 9px;
+  transform: rotate(135deg);
+}
+
+.icono-menu.activo{
+    --color:#00adb9;
+}
+

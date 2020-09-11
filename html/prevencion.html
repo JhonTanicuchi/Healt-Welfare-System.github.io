@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Healt & Welfare System | Sintomas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logos/logo_celeste.png" type="image/x-icon" />
+
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="../css/style_prevencion.css">
+    <link rel="stylesheet" href="../css/style_menu.css">
+    <link rel="stylesheet" href="../css/style_wave.css">
+    <link rel="stylesheet" href="../css/style_whatsapp.css">
+    <link rel="stylesheet" href="../css/style_asistente.css">
+    <link rel="stylesheet" href="../css/style_boton.css">
+    <link rel="stylesheet" href="../css/style_popup_activar.css">
+    <link rel="stylesheet" href="../css/skew-pantallas.css">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/hint.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/35db202371.js"></script>
+</head>
+
+<body>
+
+<!-- VENTANA MODAL ACTIVAR ASISTENTE -->
+  
+<div class="fondo-popup-Activar-Asistente" id="fondo-popup-Activar-Asistente">
+    <div class="popup-Activar-Asistente" id="popup-Activar-Asistente">
+    <div class="texto">
+        
+          <h1>¿Deseas activar a "VIví"?</h1>
+<h2>Tu asistente virtual</h2>
+<h3>Ella te narrara un breve resumen del contenido</h3>
+          <div class="boton-activar" id="boton-activar">
+            <button class="bubbly-button button-modal" onclick="modalActivarAsistente()" >Activar Viví</button></div>
+
+        </div>
+                <div class="cerrar-popup-activar">
+                  <a href="#"  onclick="cerrarModalActivar()"><i class="fas fa-times"></i></a>
+                </div>
+    </div>
+        
+    </div>
+  </div>
+
+
+
+ <!-- BOTON WHATSAPP -->
+
+ <a  data-aos="fade-left"
+ data-aos-anchor="#example-anchor"
+ data-aos-offset="0"
+ data-aos-delay="1000"
+ data-aos-duration="500" href="" class="float" target="_blank">
+   <i class="fab fa-whatsapp my-float"></i>
+ </a>
+
+ <!-- ASISTENTE -->
+
+ <div id="contenedor-Audios">
+   <audio  id="audio" class="ocultar" src="../sound/prevencion/prevencion.wav" controls="controls"> </audio>
+ </div>
+   
+
+ <!-- EFECTO ASISTENTE -->
+   <div class="loader-inner ball-scale-multiple" id="ondasSonido">
+     <div></div>
+     <div></div>
+     <div></div>
+   </div>
+ 
+
+    <!-- Menu de Navegacion -->
+    <header id="header">
+        <nav class="menu">
+            <div class="boton-asistente-menu">
+
+
+                <!-- BOTON ASISTENTE -->
+                <button data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="0" data-aos-delay="200"
+                    data-aos-duration="500" onclick="play()" class="hint--right hint--bounce"
+                    aria-label="Asistente Vivi" id="botonSonido"><i id="icon" class="fas fa-volume-mute"></i></button>
+
+                <div class="icono-menu" id="icono-menu" onclick="transform()">
+                    <span class="figura-menu-1"></span>
+                    <span class="figura-menu-2"></span>
+                    <span class="figura-menu-3"></span>
+                </div>
+
+            </div>
+
+            <div class="lista-menu">
+                <ul class="lists">
+                    <li><a class="lista " href="index.html">Inicio</a></li>
+                    <li><a class="lista" href="test.html">Test COVID-19</a></li>
+                    <li><a class="lista active" href="prevencion.html">Prevención</a></li>
+                    <li><a class="lista" href="sintomas.html">Síntomas</a></li>
+                    <li><a class="lista" href="tratamientos.html">Tratamientos</a></li>
+                    <li><a class="lista" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="img-header">
+            <div class="welcome">
+                <h1>
+                    <strong>
+                        Consejos de Prevención</strong></h1>
+                <hr>
+                <p>#YoMeQuedoEnCasa</p>
+
+            </div>
+
+        </div>
+
+        <a href="#contenido-total">
+            <div class="elemento flecha-Abajo ">
+                <div class="menuPpal suavizado"><i class="fa fa-angle-down fa-2x flecha animatedColor"></i> </div>
+            </div>
+        </a>
+
+
+        <div class="skew-pantallas-abajo"></div>
+
+    </header>
+
+
+
+    <main>
+       <!-- Contenido Prevencion -->
+       <section class="acerca-de" id="contenido-total">
+        <div class="info-container">
+            <h1 data-aos="fade-right" >#YoMeQuedoEnCasa</h1>
+            <br>
+
+            <p>Según información de la OMS, el coronavirus se transmite
+                por contacto de persona a persona con algún infectado (
+                incluso si no presenta síntomas). Por ello, la mejor
+                manera de evitar contraer este virus es siguiendo las
+                buenas prácticas de higiene que incluyen:
+                Toma las precauciones adecuadas e infórmate bien para
+                protegerte y cuidar de quienes te rodean. Sigue las
+                recomendaciones de los organismos de salud pública de
+                tu zona. </p>
+        </div>
+        </div>
+    </section>
+    </div>
+    <!-- Nuestros proyectos -->
+    <section class="our-projects">
+        <div class="skew-arriba"></div>
+        <div class="deg-background"></div>
+
+        <div class="ejeZproject">
+            <div class="container-project">
+                <div class="project-title">
+                    <h2><strong>MEDIDAS DE PROTECCION BASICAS CONTRA COVID-19</strong></h2>
+                    <p> La mayoría de las personas que se infectan padecen una enfermedad
+                        leve y se recuperan, pero en otros casos puede ser más grave. Cuide su
+                        salud y proteja a los demás a través de las siguientes medidas: </p>
+
+                </div>
+                <div class="skew-arriba"></div>
+
+            </div>
+            <div class="parrafo">
+
+                <div class="skew-pantallas-arriba"></div>
+                <div class="contenido-parrafo">
+                    <div class="imagen-parrafo">
+                        <h1 data-aos="fade-right"><strong>MASCARILLA</strong></h1>
+                        <p>Trata de usar mascarilla siempre y cuando salgas de casa, de esta manera cuidas de ti y de los demas , en caso de estar o no estar con el virus.</p>
+                        <img data-aos="fade-left" src="../img/prevencion/mascarilla1.png" alt="">
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <div class="parrafo2">
+
+                <div class="skew-pantallas-arriba-invertido"></div>
+                <div class="contenido-parrafo">
+                    <div class="imagen-parrafo">
+                        <img  data-aos="fade-right" src="../img/prevencion/cara3.png" alt="">
+                        <p>El virus puede estar en cualquier lugar, es por eso que debes tratar de tocar lo menos posible, del mismo modo no olvides no tocarte el rostro, primero desinfecta tus manos.</p>
+                        <h1 data-aos="fade-left"><strong>NO TOCARSE EL ROSTRO</strong></h1>
+
+                    </div>
+                </div>
+    
+            </div>
+            <div class="parrafo">
+                <div class="skew-pantallas-arriba"></div>
+                <div class="contenido-parrafo">
+                    <div class="imagen-parrafo">
+                        <h1 data-aos="fade-right"><strong>AISLAMIENTO SOCIAL</strong></h1>
+                        <p>Si tienes dudas de tu estado de salud, y presentas sntomas, llama a emergencias y manten aislamiento social , asi cuidas a todos</p>
+                        <img data-aos="fade-left" src="../img/prevencion/aislamiento.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="parrafo2">
+                <div class="skew-pantallas-arriba-invertido"></div>
+                <div class="contenido-parrafo">
+                    <div class="imagen-parrafo">
+                        <img data-aos="fade-right" src="../img/prevencion/lavarse.png" alt="">
+                        <p>orem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+                            laudantium quidem vel? Voluptatem assumenda numquam sit est ab, illo
+                            expedita eius repudiandae beatae dignissimos? Eaque facere quasi odio
+                            assumenda ratione? </p>
+                        <h1 data-aos="fade-left"><strong>LAVADO DE MANOS</strong></h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="parrafo">
+                <div class="skew-pantallas-arriba"></div>
+                <div class="contenido-parrafo">
+                    <div class="imagen-parrafo">
+                        <h1 data-aos="fade-right"><strong>HIGIENE RESPIRATORIA</strong></h1>
+                        <p data-aos="fade-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+                            laudantium quidem vel? Voluptatem assumenda numquam sit est ab, illo
+                            expedita eius repudiandae beatae dignissimos? Eaque facere quasi odio
+                            assumenda ratione? </p>
+                        <img data-aos="fade-left" src="../img/prevencion/estornudo (2).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="parrafo2">
+                <div class="skew-pantallas-arriba-invertido"></div>
+                <div class="contenido-parrafo">
+                    <div class="imagen-parrafo">
+                        <img data-aos="fade-right" src="../img/prevencion/distancie.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+                            laudantium quidem vel? Voluptatem assumenda numquam sit est ab, illo
+                            expedita eius repudiandae beatae dignissimos? Eaque facere quasi odio
+                            assumenda ratione? </p>
+                        <h1 data-aos="fade-left"><strong>DISTANCIAMIENTO</strong></h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-derechos">
+            <div class="icons">
+                <a class="iconFooter"
+                    href="https://www.facebook.com/Health-Welfare-System-103108564806959/?modal=admin_todo_tour"><i
+                        id="fb" class="fab fa-facebook-square"></i></a>
+                </a>
+                <a class="iconFooter" href="https://www.instagram.com/health_welfare_system/?hl=es-la"><i id="i"
+                        class="fab fa-instagram"></i></a>
+                <a class="iconFooter" href="https://twitter.com/SystemWelfare"><i id="tw"
+                        class="fab fa-twitter"></i></a>
+                <a class="iconFooter" href="https://chat.whatsapp.com/CtTSsec1UrO2SY8L2VsaZs"><i id="w"
+                        class="fab fa-whatsapp"></i></a>
+                <a class="iconFooter" href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+                &copy; Healt & Welfare System - 2020 | Todos los derechos
+                reservados.
+            </p>
+
+            <img class="barra-colores-footer" src="../img/test/colores.png" alt="">
+        </div>
+    </footer>
+
+
+
+
+</body>
+<!-- Scripts -->
+<script src="../js/test/arrays.js"></script>
+
+<script src="../js/html/popup_activar.js"></script>
+
+<script src="../js/html/menu.js"></script>
+<script src="../js/html/effects.js"></script>
+<script src="../js/html/boton.js"></script>
+<script src="../js/sound.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+
+<script>
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top -100
+  }, 2000);
+});
+
+$("body").on('cut copy paste', function (e) {
+  event.preventDefault();
+});
+
+$("body").on('contextmenu', function (e) {
+  return false;
+});
+</script>
+
+</html>

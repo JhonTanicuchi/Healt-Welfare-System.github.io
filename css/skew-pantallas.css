@@ -1,0 +1,42 @@
+/** Skew **/
+.skew-pantallas-abajo{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-width: 0 0 10vh 100vw;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+	z-index: 10;
+}
+.skew-pantallas-arriba{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-width: 10vh 100vw 0 0;
+	border-style: solid;
+	border-color: rgb(255, 255, 255) transparent transparent transparent;
+	z-index: 10;
+}
+
+/* SKEW INVERTIDO */
+
+.skew-pantallas-abajo-invertido{
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	border-width: 0 100vw 10vh 0;
+	border-style: solid;
+	border-color: transparent transparent rgb(255, 255, 255) transparent;
+	z-index: 10;
+}
+
+
+.skew-pantallas-arriba-invertido{
+    position: absolute;
+	top: 0;
+	left: 0;
+	border-width: 10vh 0 0 100vw;
+	border-style: solid;
+	border-color: rgb(47, 94, 55) transparent transparent transparent;
+	z-index: 10;
+}

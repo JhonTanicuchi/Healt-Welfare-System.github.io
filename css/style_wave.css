@@ -1,0 +1,81 @@
+
+
+/** SKEW ARRIBA **/
+
+.skew-arriba1{
+    position: absolute;
+	bottom: 0;
+	right: 0;
+	border-width: 0 0 5vh 50vw;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+}
+.skew-arriba2{
+    position: absolute;
+	bottom: 0;
+	left: 0;
+	border-width: 0 50vw 5vh 0;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+}
+
+/** SKEW ABAJO **/
+
+.skew-abajo1{
+    position: absolute;
+	top: 0;
+	right: 0;
+	border-width: 5vh 50vw 0 0;
+	border-style: solid;
+	border-color: #fff transparent transparent transparent;
+	z-index: 10;
+}
+.skew-abajo2{
+    position: absolute;
+   
+	top: 0;
+	left: 0;
+	border-width: 5vh 0 0 50vw;
+	border-style: solid;
+	border-color: #fff transparent transparent transparent;
+	z-index: 10;
+}
+
+
+
+/* FLECHA ANIMADA */
+
+.elemento{
+  position: absolute;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+
+ }
+
+ .animatedColor {
+    color:#00adb9;
+  }
+   
+  .flecha {
+    animation: arrow 2s ease-in-out infinite;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  @keyframes arrow {
+    0% {
+      transform: translate(0px, 50px);
+    }
+   
+     50% {
+      transform: translate(0px, 70px);
+    }
+    
+    100% {
+      transform: translate(0px, 50px);
+    }
+  }

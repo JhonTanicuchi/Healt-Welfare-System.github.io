@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    
+    background:transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.lista-menu {
+    margin-right: 30px;
+}
+.lista-menu  ul{
+    display: flex;
+}
+.lista-menu  ul li{
+    list-style: none;
+}
+.lista-menu  ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding:8px;
+    color:white;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: 'open sans';
+    font-weight: 300;
+}
+
+.lista-menu ul li a:hover{
+    background: #04eeff3d;
+    color:rgb(255, 255, 255);
+}
+.lista-menu  ul li a.active{
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+    cursor: default ;
+}
+
+
+.info-container {
+    width: 100%;
+    background: white;
+    font-family: halleway;
+    
+}
+.info-main {
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 200px;
+}
+.info-main h3 { 
+    color: #000000;
+    font-size: 60px;
+    text-align: center;
+}
+.info-main p {
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: left;
+} 
+
+footer{
+    width: 100%;
+    font-family: raleway;
+    
+}
+.footer-container { 
+    width: 100%;
+    background: #08917e;
+    color: rgb(207, 206, 206);
+    
+}
+.footer-main{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    display:  flex;
+    padding: 20px 0;
+}
+.footer-container div {
+    width: calc(100% / 3);
+    
+    width: 100%;
+}
+.footer-copy-redes{
+    text-align: center;
+
+}
+.footer-redes a{
+    color: #272727;
+    transition: all 0.5s linear;
+   font-size: 25px;
+   text-decoration: none;
+}
+.footer-redes a:hover{
+    color: #c4c4c4;
+}
+ .button{
+    width: 250px;
+    display: block; 
+    background:linear-gradient(50deg,rgb(8, 140, 192),rgb(4, 60, 165));
+     padding: 10px 20px;
+     text-align:  center;
+     margin: auto;
+     margin-top: 10px;
+     color: white;
+     font-size: 18px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     text-decoration: none;
+     
+    }

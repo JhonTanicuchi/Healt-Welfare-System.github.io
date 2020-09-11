@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #ffff;
+    overflow-x: hidden;
+    font-family: 'Red Hat Text', sans-serif;
+
+    
+}
+
+::-webkit-scrollbar {display: none;}
+
+/* MENU NAVEGACION */
+
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    
+    background:transparent;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* LOGO MENU */
+
+.boton-asistente-menu{
+    margin-left: 20px;
+}
+
+/* LISTA MENU */
+
+.lista-menu {
+    margin-right: 30px;
+}
+.lista-menu  ul{
+    display: flex;
+}
+.lista-menu  ul li{
+    list-style: none;
+}
+.lista-menu  ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding:8px;
+    color:white;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: 'open sans';
+    font-weight: 300;
+}
+
+.lista-menu ul li a:hover{
+    background: #04eeff3d;
+    color:rgb(255, 255, 255);
+}
+.lista-menu  ul li a.active{
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+    cursor: default ;
+}
+
+
+.texto-header img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+
+/** IMAGEN HEADER **/
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 105vh;
+    background:url(../img/fondos/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* TEXTO HEADER */
+
+.texto-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.texto-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+.texto-header hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.texto-header p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* RECOMENDACION */
+.contenido-info{
+    padding: 50px 0px;
+}
+
+.info{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+
+}
+.contenido-info hr{
+    width: 85%;
+    height: 1.5px;
+    background: rgb(156, 156, 156);  
+    margin: auto; 
+}
+.contenido-info h1{
+    font-size: 40px;
+    color: var(--negro);
+    text-align: center;
+    margin: 30px 0;
+}
+.info p{
+    text-align: justify;
+    font-size: 17px;
+    color: var(--negro);
+    line-height: 28px;
+    margin: 0 30px;
+}
+.logo-info img{
+    width: 300px;
+}
+
+/** RECUADROS **/
+
+.recuadros{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    background: url(../img/fondos/recuadros.jpg);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+}
+.fondo{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+}
+.recuadros .contenido-eje-z{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.recuadros .contenido-web{
+    width: 90%;
+    margin:auto;
+    padding-top: 100px;
+}
+.recuadros .contenido-web .titulo{
+    
+    padding:10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    
+}
+.recuadros .contenido-web .titulo h2{
+    font-size: 35px;
+    color: #fff;
+    font-weight: normal;
+}
+.recuadros .contenido-web .titulo hr{
+   background:#fff;
+   width: 50%;
+   height: 2px;
+   margin: 10px auto;
+}
+.recuadros .contenido-web .img-recuadro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+/** COMENTARIOS **/
+
+.comentarios{
+    width: 100%;
+    padding: 30px 0;
+}
+.comentarios .titulo-comentario{
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+.comentarios .titulo-comentario h2{
+    font-size: 35px;
+    font-weight: normal;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+.comentarios .titulo-comentario hr{
+    width: 50%;
+    height: 2px;
+    margin:auto;
+    background: var(--black);
+}
+.comentarios .contenedor-comentario{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.comentarios .contenedor-comentario .comentario-user{
+    width: 40%;
+    margin: 10px;
+}
+.comentarios .contenedor-comentario .comentario-user .img-user{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.comentarios .contenedor-comentario .comentario-user .img-user img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comentarios .contenedor-comentario .comentario-user .texto-comentario{
+    border: 2px solid var(--color-principal);
+    padding:20px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.comentarios .contenedor-comentario .comentario-user .texto-comentario h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-principal);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+.comentarios .contenedor-comentario .comentario-user .texto-comentario p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--negro);
+}
+.comentarios .contenedor-comentario .comentario-user .texto-comentario:hover{
+    border: 2px solid var(--color-secundario);
+}
+.comentarios .contenedor-comentario .comentario-user .texto-comentario:hover h4{
+    color: var(--color-secundario);
+}
+
+/** Footer **/
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/fondos/comentarios.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .fondo-footer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.footer .footer-eje-z{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .contenido-footer{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.footer .contenido-footer .titulo-footer{
+    width: 50%;
+    margin: auto;
+    padding:15px;
+   
+}
+.footer .contenido-footer .titulo-footer h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .contenido-footer .titulo-footer hr{
+    background: #fff;
+    height: 2px;
+    width: 60%;
+    margin:auto;
+}
+.footer .contenido-form{
+    width: 40%;
+    margin: 50px auto;
+    background: rgba(14, 14, 14, 0.897);
+    padding:30px;
+    border-radius: 10px;
+}
+.footer .contenido-form .formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .contenido-form .formulario input{
+    text-transform: capitalize;
+    width: 90%;
+    height: 40px;
+    margin:10px auto;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    background: rgba(161, 161, 161, 0.082);
+    color: #fff;
+    font-family: 'Red Hat Text', sans-serif;
+    border: none;
+}
+
+.footer .contenido-form .formulario input::placeholder{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    
+}
+.footer .contenido-form .formulario textarea{
+    color: #fff;
+    width: 90%;
+    height: 100px;
+    margin:auto;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family: 'Red Hat Text', sans-serif;
+    resize: none;
+    background: rgba(161, 161, 161, 0.082);
+}
+
+.footer .contenido-form .formulario textarea::placeholder{
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 15px;
+}
+.footer .contenido-form .formulario .enviar{
+    margin: 30px 0 0 0 ;
+    display: flex;
+    justify-content: center;
+}
+.footer .contenido-form .formulario button{
+    padding: 10px 20px;
+    margin: 0;
+}
+.footer .footer-derechos{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:rgba(255, 255, 255, 0.726);
+    align-items: center;
+    padding: 20px;
+}
+.footer .footer-derechos p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.icons {
+    display: block;
+    text-align: center;
+}
+.icons i {
+    color: var(--color-principal);
+    font-size: 25px;
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+
+.icons i:hover{
+    color: var(--color-secundario);
+}
+  
+.barra-colores-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
