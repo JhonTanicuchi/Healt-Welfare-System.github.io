@@ -11,37 +11,37 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
 <div style="width: 100%;">
   <table style="width: 100%;">
     <tr>
-      <td align="center">
-        <img src="img/capturas/cap-1.png" alt="Página de inicio" width="300">
+      <td align="center" width="50%">
+        <img src="img/capturas/cap-1.png" alt="Página de inicio" width="100%">
         <br>
         Página de inicio
       </td>
-      <td align="center">
-        <img src="img/capturas/cap-2.png" alt="Funciones de seguimiento" width="300">
+      <td align="center" width="50%">
+        <img src="img/capturas/cap-2.png" alt="Funciones de seguimiento" width="100%">
         <br>
         Funciones de seguimiento
       </td>
     </tr>
     <tr>
-      <td align="center">
-        <img src="img/capturas/cap-3.png" alt="Asistente de voz" width="300">
+      <td align="center" width="50%">
+        <img src="img/capturas/cap-3.png" alt="Asistente de voz" width="100%">
         <br>
         Asistente de voz
       </td>
-      <td align="center">
-        <img src="img/capturas/cap-4.png" alt="Registro de comidas" width="300">
+      <td align="center" width="50%">
+        <img src="img/capturas/cap-4.png" alt="Registro de comidas" width="100%">
         <br>
         Registro de comidas
       </td>
     </tr>
     <tr>
-      <td align="center">
-        <img src="img/capturas/cap-5.png" alt="Recordatorios de medicamentos" width="300">
+      <td align="center" width="50%">
+        <img src="img/capturas/cap-5.png" alt="Recordatorios de medicamentos" width="100%">
         <br>
         Recordatorios de medicamentos
       </td>
-      <td align="center">
-        <img src="img/capturas/cap-6.png" alt="Análisis de datos de salud" width="300">
+      <td align="center" width="50%">
+        <img src="img/capturas/cap-6.png" alt="Análisis de datos de salud" width="100%">
         <br>
         Análisis de datos de salud
       </td>
