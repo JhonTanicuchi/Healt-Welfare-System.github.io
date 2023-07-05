@@ -55,6 +55,10 @@ La estructura del proyecto se muestra a continuación:
 4. Responde las preguntas sobre tus síntomas y factores de riesgo.
 5. Al finalizar, recibirás un porcentaje de probabilidad de tener Covid-19.
 
+## Inclusión
+
+El sitio web se enfoca en la inclusión y accesibilidad, y cuenta con un asistente de voz integrado que brinda instrucciones y guía en cada paso del test y en la navegación de la página.
+
 ## Contribución
 
 ¡Gracias por considerar contribuir a este proyecto! Si deseas enviar una solicitud de extracción, asegúrate de seguir estas pautas:
