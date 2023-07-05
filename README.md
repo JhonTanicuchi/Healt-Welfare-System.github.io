@@ -1,6 +1,8 @@
 # Healt-Welfare-System
 
-![Logo del proyecto](img/logos/logo_celeste.png)
+<p align="center">
+  <img src="img/logos/logo_celeste.png" alt="Logo del proyecto" width="200">
+</p>
 
 Un sistema de bienestar y salud que proporciona herramientas para monitorear y mejorar la salud personal. Este proyecto ofrece funciones como seguimiento de actividad física, registro de comidas, recordatorios de medicamentos y análisis de datos de salud.
 
