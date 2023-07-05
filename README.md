@@ -27,11 +27,15 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
 
 La estructura del proyecto se muestra a continuación:
 
-css: Estilos y diseño del sitio web.
-html: Contenido y estructura de las páginas web.
-img: Imágenes utilizadas en el sitio web.
-js: Código JavaScript para funcionalidad interactiva.
-sound: Archivos de sonido o audio utilizados en el sitio web.
+- **css**: Carpeta que contiene archivos CSS utilizados para estilos y diseño del sitio web.
+
+- **html**: Carpeta que contiene archivos HTML que definen el contenido y estructura de las páginas web.
+
+- **img**: Carpeta que almacena imágenes utilizadas en el sitio web, como logotipos, ilustraciones y fotografías.
+
+- **js**: Carpeta que contiene archivos JavaScript para agregar funcionalidad interactiva al sitio web.
+
+- **sound**: Carpeta que almacena archivos de sonido o audio utilizados en el sitio web, como efectos de sonido o pistas de audio.
 
 ## Uso
 
