@@ -4,7 +4,7 @@
   <img src="img/logos/logo_celeste.png" alt="Logo del proyecto" width="200">
 </p>
 
-Un sistema de bienestar y salud que proporciona herramientas para monitorear y mejorar la salud personal. Este proyecto ofrece funciones como seguimiento de actividad física, registro de comidas, recordatorios de medicamentos y análisis de datos de salud.
+Una plataforma en línea que proporciona información actualizada sobre el Covid-19 y una aplicación interactiva para calcular el porcentaje de probabilidad de tener Covid-19 basado en síntomas y factores de riesgo.
 
 ## Capturas de Pantalla
 
@@ -17,33 +17,33 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
         Página de inicio
       </td>
       <td align="center" width="50%">
-        <img src="img/capturas/cap-2.png" alt="Funciones de seguimiento" width="100%">
+        <img src="img/capturas/cap-2.png" alt="Bienvenida al Test de COVID" width="100%">
         <br>
-        Funciones de seguimiento
+        Bienvenida al Test de COVID
       </td>
     </tr>
     <tr>
       <td align="center" width="50%">
-        <img src="img/capturas/cap-3.png" alt="Asistente de voz" width="100%">
+        <img src="img/capturas/cap-3.png" alt="Test Interactivo" width="100%">
         <br>
-        Asistente de voz
+        Test Interactivo
       </td>
       <td align="center" width="50%">
-        <img src="img/capturas/cap-4.png" alt="Registro de comidas" width="100%">
+        <img src="img/capturas/cap-4.png" alt="Test Interactivo" width="100%">
         <br>
-        Registro de comidas
+        Test Interactivo
       </td>
     </tr>
     <tr>
       <td align="center" width="50%">
-        <img src="img/capturas/cap-5.png" alt="Recordatorios de medicamentos" width="100%">
+        <img src="img/capturas/cap-5.png" alt="Test Interactivo con Asistente de voz" width="100%">
         <br>
-        Recordatorios de medicamentos
+        Test Interactivo con Asistente de voz
       </td>
       <td align="center" width="50%">
         <img src="img/capturas/cap-6.png" alt="Análisis de datos de salud" width="100%">
         <br>
-        Análisis de datos de salud
+        Análisis del resultado y opcion a descargar
       </td>
     </tr>
   </table>
