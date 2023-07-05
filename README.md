@@ -1,35 +1,51 @@
 # Healt-Welfare-System
-Sitio Web de información del Covid-19 y una app (Test de porcentaje de probabilidad de Covid-19)
 
-## Descripción
+![Logo del proyecto](img/logos/logo_celeste.png)
 
-Una descripción más detallada del proyecto, incluyendo su propósito, características principales y el problema que resuelve. Puedes incluir capturas de pantalla o enlaces a demostraciones en vivo si están disponibles.
+Un sistema de bienestar y salud que proporciona herramientas para monitorear y mejorar la salud personal. Este proyecto ofrece funciones como seguimiento de actividad física, registro de comidas, recordatorios de medicamentos y análisis de datos de salud.
+
+## Capturas de Pantalla
+
+![Página de inicio](img/screenshot1.png)
+![Funciones de seguimiento](img/screenshot2.png)
+
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+- JavaScript
 
 ## Instalación
 
-1. Asegúrate de tener instalado [Requisito 1] y [Requisito 2].
-2. Clona este repositorio en tu máquina local.
-3. Ejecuta el comando `npm install` para instalar todas las dependencias.
-4. Configura las variables de entorno necesarias (si las hay).
-5. Ejecuta el comando `npm start` para iniciar la aplicación.
+1. Clona este repositorio en tu máquina local.
+2. Navega hasta la carpeta raíz del proyecto.
+3. Abre el archivo `index.html` en tu navegador web preferido.
 
 ## Estructura del Proyecto
 
-Explica brevemente la estructura del proyecto para ayudar a los lectores a navegar por los archivos clave.
+La estructura del proyecto se muestra a continuación:
 
-- `/src`: Contiene los archivos fuente de la aplicación.
-- `/public`: Contiene archivos estáticos accesibles públicamente.
-- `/config`: Contiene la configuración del proyecto.
-- `/tests`: Contiene los archivos de pruebas unitarias.
+├── css
+│ ├── styles.css
+│ └── ...
+├── html
+│ ├── index.html
+│ └── ...
+├── img
+├── js
+│ ├── app.js
+│ └── ...
+├── sound
+│ └── ...
+└── ...
 
 ## Uso
 
-Describe cómo utilizar la aplicación una vez que esté instalada y en funcionamiento. Proporciona ejemplos de código o comandos que demuestren cómo interactuar con el proyecto.
-
-1. Abre el navegador web y visita `http://localhost:3000`.
-2. Ingresa tus credenciales de inicio de sesión o crea una nueva cuenta.
-3. Explora las diferentes secciones y características de la aplicación.
-4. Utiliza la función X ejecutando el comando `npm run X` en la terminal.
+1. Abre el sitio web en tu navegador web visitando `http://localhost:8000` después de iniciar el servidor local.
+2. Explora la información sobre el Covid-19 en las diferentes secciones del sitio web.
+3. Accede a la aplicación de prueba desde el menú o enlace correspondiente.
+4. Responde las preguntas sobre tus síntomas y factores de riesgo.
+5. Al finalizar, recibirás un porcentaje de probabilidad de tener Covid-19.
 
 ## Contribución
 
@@ -40,18 +56,7 @@ Describe cómo utilizar la aplicación una vez que esté instalada y en funciona
 3. Describe claramente los cambios realizados y explica su propósito.
 4. Mantén las líneas de código dentro de los límites de estilo establecidos en el proyecto.
 
-## Documentación Adicional
-
-Enlaces a documentación adicional o recursos útiles relacionados con el proyecto.
-
-- [Guía del Usuario](link)
-- [Arquitectura Técnica](link)
-
-## Licencia
-
-Este proyecto se distribuye bajo la [Licencia XYZ]. Consulta el archivo `LICENSE` para obtener más información.
-
 ## Contacto
 
-Si tienes alguna pregunta o comentario sobre el proyecto, no dudes en ponerte en contacto conmigo a través de [correo electrónico] o [enlace a tu perfil en redes sociales].
+Si tienes alguna pregunta o comentario sobre el proyecto, no dudes en ponerte en contacto con nosotros a través de jav.tanicuchi@yavirac.edu.ec.
 
