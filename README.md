@@ -67,6 +67,12 @@ El archivo de resultados del test de COVID-19 se encuentra disponible para su de
 2. Navega hasta la carpeta raíz del proyecto.
 3. Abre el archivo `index.html` en tu navegador web preferido.
 
+## GitHub Pages
+
+El proyecto ha sido desplegado en GitHub Pages. Puedes acceder al sitio web en el siguiente enlace:
+
+[Healt-Welfare-System en GitHub Pages](https://jhontanicuchi.github.io/Healt-Welfare-System.github.io/)
+
 ## Estructura del Proyecto
 
 La estructura del proyecto se muestra a continuación:
