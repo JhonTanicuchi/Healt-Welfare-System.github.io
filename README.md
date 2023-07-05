@@ -27,19 +27,11 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
 
 La estructura del proyecto se muestra a continuación:
 
-├── css
-│ ├── styles.css
-│ └── ...
-├── html
-│ ├── index.html
-│ └── ...
-├── img
-├── js
-│ ├── app.js
-│ └── ...
-├── sound
-│ └── ...
-└── ...
+css: Estilos y diseño del sitio web.
+html: Contenido y estructura de las páginas web.
+img: Imágenes utilizadas en el sitio web.
+js: Código JavaScript para funcionalidad interactiva.
+sound: Archivos de sonido o audio utilizados en el sitio web.
 
 ## Uso
 
