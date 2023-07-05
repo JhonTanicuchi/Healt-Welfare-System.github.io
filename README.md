@@ -8,7 +8,7 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
 
 ## Capturas de Pantalla
 
-<table>
+<table style="width: 100%;">
   <tr>
     <td align="center">
       <img src="img/capturas/cap-1.png" alt="Página de inicio" width="300">
