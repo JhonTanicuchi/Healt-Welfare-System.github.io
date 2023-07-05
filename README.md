@@ -8,18 +8,18 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
 
 ## Capturas de Pantalla
 
-![Página de inicio](img/cap-1.png)
-![Funciones de seguimiento](img/cap-2.png)
-![Asistente de voz](img/cap-3.png)
-![Registro de comidas](img/cap-4.png)
-![Recordatorios de medicamentos](img/cap-5.png)
-![Análisis de datos de salud](img/cap-6.png)
+![Página de inicio](img/capturas/cap-1.png)
+![Funciones de seguimiento](img/capturas/cap-2.png)
+![Asistente de voz](img/capturas/cap-3.png)
+![Registro de comidas](img/capturas/cap-4.png)
+![Recordatorios de medicamentos](img/capturas/cap-5.png)
+![Análisis de datos de salud](img/capturas/cap-6.png)
 
 ## Archivo de Resultados del Test
 
 El archivo de resultados del test de COVID-19 se encuentra disponible para su descarga en formato PDF.
 
-- [Descargar Resultados del Test de COVID-19](img/resultados-test.pdf)
+- [Descargar Resultados del Test de COVID-19](img/capturas/resultados-test.pdf)
 
 ## Tecnologías Utilizadas
 
