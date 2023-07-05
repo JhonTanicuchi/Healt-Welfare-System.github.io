@@ -8,12 +8,44 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
 
 ## Capturas de Pantalla
 
-![Página de inicio](img/capturas/cap-1.png)
-![Funciones de seguimiento](img/capturas/cap-2.png)
-![Asistente de voz](img/capturas/cap-3.png)
-![Registro de comidas](img/capturas/cap-4.png)
-![Recordatorios de medicamentos](img/capturas/cap-5.png)
-![Análisis de datos de salud](img/capturas/cap-6.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="img/capturas/cap-1.png" alt="Página de inicio" width="300">
+      <br>
+      Página de inicio
+    </td>
+    <td align="center">
+      <img src="img/capturas/cap-2.png" alt="Funciones de seguimiento" width="300">
+      <br>
+      Funciones de seguimiento
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="img/capturas/cap-3.png" alt="Asistente de voz" width="300">
+      <br>
+      Asistente de voz
+    </td>
+    <td align="center">
+      <img src="img/capturas/cap-4.png" alt="Registro de comidas" width="300">
+      <br>
+      Registro de comidas
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="img/capturas/cap-5.png" alt="Recordatorios de medicamentos" width="300">
+      <br>
+      Recordatorios de medicamentos
+    </td>
+    <td align="center">
+      <img src="img/capturas/cap-6.png" alt="Análisis de datos de salud" width="300">
+      <br>
+      Análisis de datos de salud
+    </td>
+  </tr>
+</table>
 
 ## Archivo de Resultados del Test
 
