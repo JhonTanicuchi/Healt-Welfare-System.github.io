@@ -8,8 +8,18 @@ Un sistema de bienestar y salud que proporciona herramientas para monitorear y m
 
 ## Capturas de Pantalla
 
-![Página de inicio](img/screenshot1.png)
-![Funciones de seguimiento](img/screenshot2.png)
+![Página de inicio](img/cap-1.png)
+![Funciones de seguimiento](img/cap-2.png)
+![Asistente de voz](img/cap-3.png)
+![Registro de comidas](img/cap-4.png)
+![Recordatorios de medicamentos](img/cap-5.png)
+![Análisis de datos de salud](img/cap-6.png)
+
+## Archivo de Resultados del Test
+
+El archivo de resultados del test de COVID-19 se encuentra disponible para su descarga en formato PDF.
+
+- [Descargar Resultados del Test de COVID-19](img/resultados-test.pdf)
 
 ## Tecnologías Utilizadas
 
@@ -44,6 +54,10 @@ La estructura del proyecto se muestra a continuación:
 3. Accede a la aplicación de prueba desde el menú o enlace correspondiente.
 4. Responde las preguntas sobre tus síntomas y factores de riesgo.
 5. Al finalizar, recibirás un porcentaje de probabilidad de tener Covid-19.
+
+## Inclusión
+
+El sitio web se enfoca en la inclusión y accesibilidad, y cuenta con un asistente de voz integrado que brinda instrucciones y guía en cada paso del test y en la navegación de la página.
 
 ## Contribución
 
